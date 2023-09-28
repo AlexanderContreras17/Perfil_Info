@@ -1,0 +1,54 @@
+﻿@model InformacionApp.Models.ViewModels.IndexViewModel
+@{
+	
+	<html>
+	
+	<head>
+	<title>Mi Perfil</title>
+	<style>
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+		}
+
+        dl {
+            text-align: left; 
+            margin: 0 auto; 
+            padding: 20px; 
+            border: 1px solid #ccc;
+        }
+        dt {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        dd {
+            margin-bottom: 10px;
+        }
+		img{
+			
+		}
+    </style>
+	</head>
+	<body>
+	<div class="container">
+			<img src="~/imagenes/img1.png">
+			<dl>
+				<dt>Nombre: </dt>
+				<dd>@Model.Nombre</dd>
+				<dt>Carrera: </dt>
+				<dd>@Model.Carrera</dd>
+				<dt>Correo: </dt>
+				<dd>@Model.Correo</dd>
+				<dt> Semestre: </dt>
+				<dd>@Model.semestre</dd>
+				<dt>Numero de Control</dt>
+				<dd>@Model.NumeroControl</dd>
+			</dl>
+	</div>
+		
+	</body>
+	</html>
+}

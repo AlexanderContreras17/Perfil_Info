@@ -1,0 +1,21 @@
+﻿@model InformacionApp.Models.ViewModels.IndexViewModel
+@{
+	<html>
+	<head>
+		<title> Mi Pagina web</title>
+	</head>
+	<body>
+	<dl>
+	<dt>Nombre: </dt>
+	<dd>@Model.Nombre</dd>
+	<dt>Materia: </dt>
+	<dd>@Model.Materia</dd>
+	<dt>Semestre: </dt>
+	<dd>@Model.semestre</dd>
+	<dt> Periodo: </dt>
+	<dd>@Model.periodo</dd>
+	</dl>
+	<a href="~/Home/MiPerfil">Perfil</a>
+	</body>
+	</html>
+}
